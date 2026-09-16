@@ -1,69 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Google tag (gtag.js) — keep only ONE Google tag on this page -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18451557443"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-18451557443');
+  </script>
 
+  <!-- Google Ads conversion tracking for "Click to call (1)" -->
+  <script>
+    function gtag_report_conversion(url) {
+      var callback = function () {
+        if (typeof url !== 'undefined') {
+          window.location.href = url;
+        }
+      };
 
-<!-- Event snippet for Contact (2) conversion page
-In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
-<script>
-function gtag_report_conversion(url) {
-  var callback = function () {
-    if (typeof(url) != 'undefined') {
-      window.location = url;
+      gtag('event', 'conversion', {
+        'send_to': 'AW-18451557443/7Z_TCNXQ-PgcEMPYsd5E',
+        'event_callback': callback
+      });
+
+      return false;
     }
-  };
-  gtag('event', 'conversion', {
-      'send_to': 'AW-18451557443/jlpgCIPCkPocEMPYsd5E',
-      'event_callback': callback
-  });
-  return false;
-}
-</script>
-
-  
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18451557443"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'AW-18451557443');
-</script>
-  
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18451557443"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'AW-18451557443');
-</script>
-  
-<!-- Google tag (gtag.js) --> <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18451557443"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-18451557443'); </script>
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18451557443"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'AW-18451557443');
-</script>
-    
-  <!-- Event snippet for Page view conversion page -->
-<script>
-  gtag('event', 'conversion', {'send_to': 'AW-18451557443/7Z_TCNXQ-PgcEMPYsd5E'});
-</script>
+  </script>
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Tech Care Us customer information and assistance.">
   <title>Customer Support | Tech Care Us</title>
+
   <style>
     * { box-sizing: border-box; }
+
     body {
       margin: 0;
       font-family: Arial, Helvetica, sans-serif;
@@ -71,30 +43,38 @@ function gtag_report_conversion(url) {
       color: #222;
       line-height: 1.5;
     }
+
     a { color: inherit; }
+
     .wrap {
       width: min(760px, calc(100% - 28px));
       margin: 0 auto;
     }
+
     header {
       background: #ffffff;
       border-bottom: 1px solid #ddd;
     }
+
     .header-inner {
       min-height: 58px;
       display: flex;
       align-items: center;
       justify-content: space-between;
     }
+
     .brand {
       font-weight: 700;
       font-size: 18px;
     }
+
     .contact-top {
       text-decoration: none;
       font-weight: 700;
     }
+
     main { padding: 20px 0 40px; }
+
     .hero {
       background: #fff;
       border: 1px solid #ddd;
@@ -102,12 +82,14 @@ function gtag_report_conversion(url) {
       padding: 30px 24px;
       text-align: center;
     }
+
     .label {
       margin: 0 0 6px;
       font-size: 18px;
       font-weight: 800;
       text-transform: uppercase;
     }
+
     .phone {
       display: block;
       margin: 0 0 18px;
@@ -117,17 +99,20 @@ function gtag_report_conversion(url) {
       text-decoration: none;
       color: #146b55;
     }
+
     .hero h1 {
       margin: 0 0 10px;
       font-size: clamp(28px, 5vw, 40px);
       line-height: 1.15;
     }
+
     .hero p {
       max-width: 600px;
       margin: 0 auto 20px;
       font-size: 17px;
       color: #555;
     }
+
     .call-button {
       display: inline-block;
       padding: 14px 22px;
@@ -138,6 +123,7 @@ function gtag_report_conversion(url) {
       font-size: 18px;
       font-weight: 800;
     }
+
     .section {
       margin-top: 24px;
       background: #fff;
@@ -145,39 +131,48 @@ function gtag_report_conversion(url) {
       border-radius: 10px;
       padding: 24px;
     }
+
     .section h2 {
       margin: 0 0 8px;
       font-size: 26px;
     }
+
     .section-intro {
       margin: 0 0 18px;
       color: #555;
     }
+
     .items {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 12px;
     }
+
     .item {
       padding: 16px;
       background: #f8f8f8;
       border: 1px solid #e2e2e2;
       border-radius: 8px;
     }
+
     .item h3 {
       margin: 0 0 5px;
       font-size: 18px;
     }
+
     .item p {
       margin: 0;
       color: #555;
     }
+
     .contact-box p { margin: 6px 0; }
+
     .contact-link {
       color: #146b55;
       font-weight: 800;
       text-decoration: none;
     }
+
     .notice {
       margin-top: 24px;
       padding: 18px;
@@ -187,12 +182,14 @@ function gtag_report_conversion(url) {
       font-size: 14px;
       color: #555;
     }
+
     footer {
       padding: 0 0 28px;
       text-align: center;
       color: #777;
       font-size: 13px;
     }
+
     @media (max-width: 600px) {
       .header-inner { min-height: 54px; }
       .hero { padding: 26px 18px; }
@@ -203,6 +200,7 @@ function gtag_report_conversion(url) {
     }
   </style>
 </head>
+
 <body>
   <header>
     <div class="wrap header-inner">
@@ -214,28 +212,44 @@ function gtag_report_conversion(url) {
   <main class="wrap">
     <section class="hero">
       <p class="label">Customer Support</p>
-      <a class="phone" href="tel:+1 (201) 279-1152">+1 (201) 279-1152</a>
+
+      <a
+        class="phone"
+        href="tel:+12012791152"
+        onclick="return gtag_report_conversion('tel:+12012791152');"
+        aria-label="Call customer support at 1-201-279-1152"
+      >+1 (201) 279-1152</a>
+
       <h1>Need Help?</h1>
       <p>Call us for customer information and general assistance.</p>
-      <a class="call-button" href="tel:+1 (201) 279-1152">Call Customer Support</a>
+
+      <a
+        class="call-button"
+        href="tel:+12012791152"
+        onclick="return gtag_report_conversion('tel:+12012791152');"
+      >Call Customer Support</a>
     </section>
 
     <section class="section">
       <h2>How We Can Help</h2>
       <p class="section-intro">We can help with general questions about our products and services.</p>
+
       <div class="items">
         <div class="item">
           <h3>Orders</h3>
           <p>Questions about orders, transactions, or delivery.</p>
         </div>
+
         <div class="item">
           <h3>Billing</h3>
           <p>Questions about payments, charges, or invoices.</p>
         </div>
+
         <div class="item">
           <h3>Account</h3>
           <p>General questions about your account.</p>
         </div>
+
         <div class="item">
           <h3>Products & Services</h3>
           <p>Information about products, services, and options.</p>
@@ -245,10 +259,23 @@ function gtag_report_conversion(url) {
 
     <section class="section" id="contact">
       <h2>Contact Us</h2>
+
       <div class="contact-box">
-        <p><strong>Phone:</strong> <a class="contact-link" href="tel:+1 (201) 279-1152">+1 (201) 279-1152</a></p>
-        <p><strong>Email:</strong> <a class="contact-link" href="mailto:support@techcareus.com">support@techcareus.com</a></p>
+        <p>
+          <strong>Phone:</strong>
+          <a
+            class="contact-link"
+            href="tel:+12012791152"
+            onclick="return gtag_report_conversion('tel:+12012791152');"
+          >+1 (201) 279-1152</a>
+        </p>
+
+        <p>
+          <strong>Email:</strong>
+          <a class="contact-link" href="mailto:support@techcareus.com">support@techcareus.com</a>
+        </p>
       </div>
+
       <div class="notice">
         Tech Care Us is an independent business. This website does not claim to represent another company, internet provider, software company, or telecommunications brand.
       </div>
